@@ -20,5 +20,8 @@ script:
 - cp travis_local_settings.py local_settings.py
 - coverage run --branch --source=. ./manage.py test --keepdb
 deploy:
+  provider: heroku
+  app: egc-1819-1230
+  strategy: git
   api_key:
     secure: BOvRZLm4RLJSrEdb1Wy3P/wmcTjM5deu/PiamB1UTF8Xtq2v+zAeXOVJkNNO7lGwUDrGPZKrJDnQsbrD0NNZKweNvcyfT82aVMGyh8wXztR3Tv8EikOI2WtOPnYEL9JEWmJ+lJeoNtjDSG6szf6bKQamHhdgm8tp5NRTfT1aVlOJjUb+vxLv24UBu9PbgPvRkVLHzYJEQzgOk/7VyCzUM6bSpIhJSS73GiQIGRet8o3jVTAqCz5Qe7tixCJV24TPAU4saSDwkvffPH0E5WxlVYxImC1T9CDCtypT/orUIKmEj0/kYI7u4GZAuuiTtbYGViA+d7/civtsiDhbxL8vCytVcq1e/Ax4jifBShh91569jpnRJa/+bZOTc3AUpbFcD3nC/IdamwkTADJC8tWHobyvdMBDdtx+qGuTohnU0xWj+Zh38kiPDcfcSrrgKd4PeUxPfebewanp4rs6NPuSDgrF5SrnE70q+zcjaSRwlL/8vg95lDVGpFkP1Kh1eiXkOEAufQAto7u0lORLb73t6J5VBHY7voTwImu7vdtdLItRpKJ90kVjmRtJ3aSDUqwC2AFLywkXePRN6oK7ffEM18Nk0WtCnqP2M3S0pYPQRQVQtEWn8qZXQgM+52MPTSaPnKw0XIOh0t31qu3piQLylew+gVsW2dY62RZFBOx+M4E=
