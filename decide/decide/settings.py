@@ -161,3 +161,6 @@ except ImportError:
 
 
 INSTALLED_APPS = INSTALLED_APPS + MODULES
+
+import django_heroku
+django.heroku.settings(locals())
