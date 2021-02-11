@@ -154,6 +154,19 @@ KEYBITS = 256
 
 BASEURL = 'https://egc-1819-1230.herokuapp.com/'
 
+APIS = {
+    'authentication': BASEURL,
+    'base': BASEURL,
+    'booth': BASEURL,
+    'census': BASEURL,
+    'mixnet': BASEURL,
+    'postproc': BASEURL,
+    'store': BASEURL,
+    'visualizer': BASEURL,
+    'voting': BASEURL,
+}
+
+
 try:
     from local_settings import *
 except ImportError:
